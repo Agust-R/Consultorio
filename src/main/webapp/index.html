@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Consultorio</title>
+</head>
+
+<body>
+    <h1>Consultorio Privado</h1>
+    <section>
+        <h2>Ingresar Paciente</h2>
+
+        <form action="nuevopaciente" method="post">
+            <div>
+                <label>DNI</label>
+                <input name="dni" type="text" />
+            </div>
+            <div>
+                <label>Nombre</label>
+                <input name="nombre" type="text" />
+            </div>
+            <div>
+                <label>Apellido</label>
+                <input name="apellido" type="text" />
+            </div>
+            <div>
+                <label>Edad</label>
+                <input name="edad" type="text" />
+            </div>
+            <div>
+                <label>Contacto</label>
+                <input name="contacto" type="text" />
+            </div>
+            <input type="submit" value="Guardar" />
+        </form>
+    </section>
+    <section>
+        <h3>Buscar por DNI</h3>
+        <form action="verpaciente" method="get">
+            <div>
+                <label>DNI Paciente</label>
+                <input name="dni" type="text" />
+            </div>
+            <input type="submit" value="Ver" />
+        </form>
+    </section>
+</body>
+</html>
